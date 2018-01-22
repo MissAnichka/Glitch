@@ -1,0 +1,14 @@
+/* reset */
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+#matrixCanvas {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.65;
+} 
+
