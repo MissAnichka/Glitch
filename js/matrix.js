@@ -49,8 +49,8 @@ function MatrixEffect() {
     }
     setInterval(matrixDraw, 33)
 }
-// begins after 7 seconds
-setTimeout(MatrixEffect, 7000);
+// begins after 5 seconds
+setTimeout(MatrixEffect, 5000);
 
 
 // credits: http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
