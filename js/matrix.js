@@ -25,16 +25,16 @@ function MatrixEffect() {
 
     // adding a layer of english words to subtly flash horizontally on the screen
     let startObey = () => {
-        ctx.fillText(obey, 25 * 30, drops[25] * 30);
+        ctx.fillText(obey, 25 * font_size, drops[25] * font_size);
     }
     let startConsume = () => {
-        ctx.fillText(consume, 15 * 20, drops[15] * 20);
+        ctx.fillText(consume, 15 * font_size, drops[15] * font_size);
     }
     let startSensationalize = () => {
-        ctx.fillText(sensationalize, 10 * 15, drops[10] * 15);
+        ctx.fillText(sensationalize, 10 * font_size, drops[10] * font_size);
     }
     let startInstill = () => {
-        ctx.fillText(instill, 30 * 18, drops[30] * 18);
+        ctx.fillText(instill, 30 * font_size, drops[30] * font_size);
     }
 
     setInterval(startObey, 7000);
