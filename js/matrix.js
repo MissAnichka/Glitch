@@ -10,6 +10,7 @@ function MatrixEffect() {
     // let chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑" // saving jic want to add later
     //converting the string into an array of single characters
     russian = russian.split("");
+    let obey = ['OBEY'], consume = ['CONSUME'], sensationalize = ['SENSATIONALIZE LIFE'], instill = ['INSTILL FEAR'];
 
     let font_size = 18;
     let columns = windowW / font_size; //number of columns for the rain
@@ -22,6 +23,25 @@ function MatrixEffect() {
         drops[x] = 1;
     }
 
+    // adding a layer of english words to subtly flash horizontally on the screen
+    let startObey = () => {
+        ctx.fillText(obey, 25 * 30, drops[25] * 30);
+    }
+    let startConsume = () => {
+        ctx.fillText(consume, 15 * 20, drops[15] * 20);
+    }
+    let startSensationalize = () => {
+        ctx.fillText(sensationalize, 10 * 15, drops[10] * 15);
+    }
+    let startInstill = () => {
+        ctx.fillText(instill, 30 * 18, drops[30] * 18);
+    }
+
+    setInterval(startObey, 7000);
+    setInterval(startConsume, 8000);
+    setInterval(startSensationalize, 10000);
+    setInterval(startInstill, 9000);
+    
     //drawing the characters
     function matrixDraw() {
         //Black BG for the canvas
